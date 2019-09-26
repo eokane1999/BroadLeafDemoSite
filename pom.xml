@@ -46,10 +46,7 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <configuration>
                         <jvmArguments>${boot.jvm.args} -javaagent:${sl.testListenerPath}</jvmArguments>
-					</configuration>
-</plugin>
-
-                    </configuration>
+		    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
