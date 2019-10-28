@@ -6,7 +6,7 @@ install:
  
 before_script:
   - export SL_PR_REPO="https://www.github.com/$TRAVIS_REPO_SLUG"
-  - java -jar sl-build-scanner.jar -prConfig -appname "" -latestCommit $TRAVIS_PULL_REQUEST_SHA -pullRequestNumber $TRAVIS_PULL_REQUEST -repoUrl $SL_PR_REPO -targetBranch $TRAVIS_BRANCH -tokenfile sl_acc_token.txt -pi "*com.community*"
+  - java -jar sl-build-scanner.jar -prConfig -appname "Wipro-testjob" -latestCommit $TRAVIS_PULL_REQUEST_SHA -pullRequestNumber $TRAVIS_PULL_REQUEST -repoUrl $SL_PR_REPO -targetBranch $TRAVIS_BRANCH -tokenfile sl_acc_token.txt -pi "*com.community*"
  
 script:                   # Sealights is predefined in the POM Profile under the profile 'sealights'
   - mvn clean test -Psealights
